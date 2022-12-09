@@ -1,0 +1,18 @@
+github:
+  username: lecy 
+  reponame: nonprofitdataproject 
+
+###
+### NAVIGATION BAR
+###
+
+navbar:
+- title: Data Access
+  url: data
+- title: The Survey
+  url: survey
+- title: The Platform
+  url: platform
+- title: About
+  url: about
+
