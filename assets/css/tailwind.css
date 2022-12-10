@@ -809,6 +809,10 @@ video {
   gap: 0.5rem;
 }
 
+.self-start {
+  align-self: flex-start;
+}
+
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
