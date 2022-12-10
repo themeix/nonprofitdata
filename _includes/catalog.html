@@ -1,0 +1,22 @@
+
+<div class="container mx-auto">
+  <ul class="timeline theme-{{ include.color }}  my-10">
+    {% for item in include.items %} 
+    <li class="{% cycle 'timeline-normal', 'timeline-inverted' %} ">
+      <div>
+        <div class="img-circle img-responsive timeline-image"></div>    
+
+      </div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="text-xl font-bold pb-3"><a class=" " href="{{ item.url }}">{{ item.name }}</a> </h4>
+        </div>
+        <div class="timeline-body">
+          <p class="text-white-50">{{ item.desc | markdownify }}</p>      
+        </div>
+      </div>
+    </li>
+    {% endfor %} 
+  </ul>
+</div>
+

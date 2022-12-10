@@ -1,0 +1,14 @@
+catalog-01:
+- name: Business Master File 
+  desc: Lorem ipsum dolor sit 
+  url: /bmf
+- name: Other Name
+  desc: Lorem ipsum dolor sit 
+  url: http://other.com
+catalog-02:
+- name: Core Trend Panel
+  desc: Lorem ipsum dolor sit  
+  url: /coretrend
+- name: Digitized
+  desc: Lorem ipsum dolor sit  
+  url: digitized 

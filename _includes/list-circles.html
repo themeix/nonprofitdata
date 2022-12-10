@@ -1,0 +1,38 @@
+<div class="list-circles grid grid-cols-4 gap-8">
+   {% for item in include.items %}
+     <div class="list-circles-item">
+       {% if item.img %}
+         {% if item.url %}
+           <a href="{{ item.url }}"><img class="w-36 h-36 item-img rounded-full mb-4" src="{{ item.img }}"  /></a>
+         {% else %}
+           <img src="{{ item.img }}" class="w-36 h-36 item-img rounded-full mb-4" />
+         {% endif %}
+       {% else %}
+           <img src="{{ page.default_profile_img }}" class="w-36 h-36 item-img rounded-full mb-4" />
+       {% endif %}
+       {% if item.name %}
+         <h4 class="item-name font-bold text-lg">{{ item.name }}</h4>
+       {% endif %}
+       {% if item.desc %}
+         <div class="item-desc text-sm">{{ item.desc }}</div>
+       {% endif %}
+       <div class="item-links">
+         {% if item.website %}
+           <a class="item-link" href="{{ item.website }}" title="Website">
+             <span class="fa fa-home"></span>
+           </a>
+         {% endif %}
+         {% if item.github %}
+           <a class="item-link" href="{{ item.github }}" title="GitHub">
+             <span class="fa fa-github"></span>
+           </a>
+         {% endif %}
+         {% if item.twitter %}
+           <a class="item-link" href="{{ item.twitter }}" title="Twitter">
+             <span class="fa fa-twitter"></span>
+           </a>
+         {% endif %}
+       </div>
+     </div>
+   {% endfor %}
+ </div>

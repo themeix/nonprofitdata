@@ -1,47 +1,97 @@
-<header class="css-1vcn2qd e1h2w6rn3">
-   <div class="css-plp867 e1h2w6rn2">
-      <a href="https://www.urban.org/" target="_blank" class="css-2mq80b e1h2w6rn1">
-         <svg aria-label="Urban Institute" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 90">
-            <g clip-path="url(#a)">
-               <path d="M80 21.497v27.117c0 3.363-.508 6.26-1.525 8.692a16.047 16.047 0 0 1-4.307 6.046 17.722 17.722 0 0 1-6.72 3.559 33.777 33.777 0 0 1-17.527 0 17.696 17.696 0 0 1-6.72-3.56 15.998 15.998 0 0 1-4.303-6.045c-1.02-2.432-1.53-5.329-1.53-8.692V21.497h16.737v25.532c0 .894.03 1.746.089 2.557a6.38 6.38 0 0 0 .52 2.158c.288.625.77 1.143 1.373 1.478a6.439 6.439 0 0 0 5.198 0 3.251 3.251 0 0 0 1.374-1.478 6.382 6.382 0 0 0 .52-2.158c.059-.808.089-1.66.089-2.557V21.497H80z" fill="#1A96D2"></path>
-               <path d="M3.94 68.481H0v-3.924h3.94v3.924zM22.803 68.481H18.86v-3.924h3.943v3.924zM3.94 25.443H0V21.52h3.94v3.924zM22.803 25.443H18.86V21.52h3.943v3.924zM3.94 46.962H0v-3.924h3.94v3.925zM22.803 46.962H18.86v-3.924h3.943v3.925zM3.943 0v3.92H0V0h3.943zM22.8 0v3.92h-3.94V0h3.94zM41.845 0v3.92h-3.94V0h3.94zM60.798 0v3.92H56.86V0h3.94zM79.751 0v3.92h-3.939V0h3.94zM3.943 86.075V90H0v-3.925h3.943zM22.8 86.075V90h-3.94v-3.925h3.94zM41.924 86.075V90H37.98v-3.925h3.943zM60.913 86.075V90H56.97v-3.925h3.943zM79.903 86.075V90H75.96v-3.925h3.943z" fill="#9B9DA1"></path>
-            </g>
-            <defs>
-               <clipPath id="a">
-                  <path fill="#fff" d="M0 0h80v90H0z"></path>
-               </clipPath>
-            </defs>
-         </svg>
-      </a>
-      <a href="http://nonprofitdataproject.org/" class="css-igx1pk e1h2w6rn0"><span>Nonprofit </span>Data Project</a>
-      <div class="css-3g107n eibgerf4">
-         <button aria-label="Menu" type="button" class="css-1j8exzv e110ux8g1"><span class="css-1r1jy9b e110ux8g0"></span></button>
-         <nav class="css-lk9fmk eibgerf3">
-            <ul class="css-z06qs eibgerf2">
-
-    {% for link in site.navbar %}
-
-        <li class="css-zpgvaa eibgerf1"><a href="{{ link.url }}" class="css-tnbhle eibgerf0"> {{ link.title }} </a></li>
-
-    {% endfor %}
-
-        <li class="css-zpgvaa eibgerf1">
-           <a href="https://github.com/{{ site.github.username }}/{{ site.github.reponame }}/edit/main/{{page.path}}" target = "_blank">
-           <i class="fa fa-github x3" id="github_icon"></i></a>
-        </li>
-
-
-               <!-- <li class="css-zpgvaa eibgerf1"><a href="/data-explorer/explorer" class="css-tnbhle eibgerf0">Data Tool</a></li> -->
-               <!-- <li class="css-zpgvaa eibgerf1"><a href="https://educationdata.urban.org/documentation/" class="css-tnbhle eibgerf0">Full API</a></li> -->
-               <!-- <li class="css-zpgvaa eibgerf1"><a href="/data-explorer/about" class="css-tnbhle eibgerf0">About</a></li> -->
-               <!-- <li class="css-zpgvaa eibgerf1"><a href="/data-explorer/contact" class="css-tnbhle eibgerf0">Contact Us</a></li> -->
-               <!-- <li class="css-zpgvaa eibgerf1"><a href="/data-explorer/how-to" class="css-tnbhle eibgerf0">How To</a></li> -->
-
-
-
-            </ul>
+ <!--  ====================== Header Area Start =============================  -->
+ <header class="header-area  header-bottombar header-area  py-4 border-b border-gray-100">
+   <div class="top-search relative z-9 hidden py-3 w-full bg-indigo-500">
+      <div class="container ">
+         <form action="#">
+            <div class="flex items-center">
+               <div class="flex-col">
+                  <a href="#">
+                     <span class="cursor-pointer">
+                        <svg width="20" height="20" viewBox="0 0 20 20"
+                           fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M19.9399 18.5624L13.4474 12.0699C14.4549 10.7675 14.9999 9.17496 14.9999 7.49997C14.9999 5.49498 14.2174 3.61498 12.8024 2.19749C11.3874 0.779996 9.50246 0 7.49997 0C5.49748 0 3.61248 0.782496 2.19749 2.19749C0.779996 3.61248 0 5.49498 0 7.49997C0 9.50246 0.782496 11.3874 2.19749 12.8024C3.61248 14.2199 5.49498 14.9999 7.49997 14.9999C9.17496 14.9999 10.765 14.4549 12.0674 13.4499L18.5599 19.9399C18.579 19.959 18.6016 19.9741 18.6264 19.9844C18.6513 19.9947 18.678 20 18.7049 20C18.7318 20 18.7585 19.9947 18.7834 19.9844C18.8083 19.9741 18.8309 19.959 18.8499 19.9399L19.9399 18.8524C19.959 18.8334 19.9741 18.8108 19.9844 18.7859C19.9947 18.761 20 18.7343 20 18.7074C20 18.6805 19.9947 18.6538 19.9844 18.6289C19.9741 18.6041 19.959 18.5815 19.9399 18.5624V18.5624ZM11.46 11.46C10.4 12.5174 8.99496 13.0999 7.49997 13.0999C6.00497 13.0999 4.59998 12.5174 3.53998 11.46C2.48249 10.4 1.89999 8.99496 1.89999 7.49997C1.89999 6.00497 2.48249 4.59748 3.53998 3.53998C4.59998 2.48249 6.00497 1.89999 7.49997 1.89999C8.99496 1.89999 10.4025 2.47999 11.46 3.53998C12.5174 4.59998 13.0999 6.00497 13.0999 7.49997C13.0999 8.99496 12.5174 10.4025 11.46 11.46Z"
+                              fill="white" />
+                        </svg>
+                     </span>
+                  </a>
+               </div>
+               <div class="flex-col w-full">
+                  <input
+                     class="bg-transparent appearance-none  text-white  w-full py-2 px-4 placeholder-coolGray-400 leading-tight focus:outline-none  focus:border-purple-500"
+                     type="text" placeholder="Search here...">
+               </div>
+               <div class="flex-col">
+                  <button type="button" class="input-group-addon close-search close-hover">
+                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 21L1 1M1 21L21 1L1 21Z" stroke="white" stroke-width="2"
+                           stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                  </button>
+               </div>
+            </div>
+         </form>
+      </div>
+   </div>
+   <div class="container ">
+      <div class="header-area-inner  py-4 lg:py-2 relative  z-20">
+         <nav class="header-nav flex items-center justify-between relative">
+            <div class="header-logo flex items-center">
+               <a href="https://www.urban.org/" class="flex items-center  mr-6  w-8">
+                   <svg aria-label="Urban Institute" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 90">
+                       <g clip-path="url(#a)">
+                          <path d="M80 21.497v27.117c0 3.363-.508 6.26-1.525 8.692a16.047 16.047 0 0 1-4.307 6.046 17.722 17.722 0 0 1-6.72 3.559 33.777 33.777 0 0 1-17.527 0 17.696 17.696 0 0 1-6.72-3.56 15.998 15.998 0 0 1-4.303-6.045c-1.02-2.432-1.53-5.329-1.53-8.692V21.497h16.737v25.532c0 .894.03 1.746.089 2.557a6.38 6.38 0 0 0 .52 2.158c.288.625.77 1.143 1.373 1.478a6.439 6.439 0 0 0 5.198 0 3.251 3.251 0 0 0 1.374-1.478 6.382 6.382 0 0 0 .52-2.158c.059-.808.089-1.66.089-2.557V21.497H80z" fill="#1A96D2"></path>
+                          <path d="M3.94 68.481H0v-3.924h3.94v3.924zM22.803 68.481H18.86v-3.924h3.943v3.924zM3.94 25.443H0V21.52h3.94v3.924zM22.803 25.443H18.86V21.52h3.943v3.924zM3.94 46.962H0v-3.924h3.94v3.925zM22.803 46.962H18.86v-3.924h3.943v3.925zM3.943 0v3.92H0V0h3.943zM22.8 0v3.92h-3.94V0h3.94zM41.845 0v3.92h-3.94V0h3.94zM60.798 0v3.92H56.86V0h3.94zM79.751 0v3.92h-3.939V0h3.94zM3.943 86.075V90H0v-3.925h3.943zM22.8 86.075V90h-3.94v-3.925h3.94zM41.924 86.075V90H37.98v-3.925h3.943zM60.913 86.075V90H56.97v-3.925h3.943zM79.903 86.075V90H75.96v-3.925h3.943z" fill="#9B9DA1"></path>
+                       </g>
+                       <defs>
+                          <clipPath id="a">
+                             <path fill="#fff" d="M0 0h80v90H0z"></path>
+                          </clipPath>
+                       </defs>
+                    </svg>
+               </a>
+               <a href="http://nonprofitdataproject.org/" class="text-black-100 font-bold text-xl" >NONPROFIT DATA PROJECT
+               </a>
+            </div>
+            <div class="flex-grow lg:flex lg:items-center lg:w-auto">
+               <ul
+                  class="toggle-menu-class  p-10 lg:p-0 dropdown-menu justify-end bg-white lg:bg-transparent  shadow lg:shadow-none absolute lg:relative inset-x-0 hidden lg:flex lg:flex-grow items-center mt-[60px] lg:mt-0 mobile-hover">
+                
+                  {% for link in site.navbar %}
+                  <li class="relative lg:mr-8 mb-2 lg:mb-0">
+                     <a class="   text-black-100 font-medium hover:text-sky-200 text-xl"
+                        href="{{ link.url }}">{{ link.title }}</a>
+                  </li>
+    {% endfor %}                  
+                 
+              
+               
+                  
+               </ul>
+               <ul class="dropdown-menu right-side-menu flex flex-shrink-0 items-center">
+                  <li class="search-bar icon-set flex  relative ml-auto -left-14 lg:left-0">
+                     <a class=" search  text-base font-medium text-coolGray-900" href="#">
+                        <span>
+                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path d="M10 0C8.68678 0 7.38642 0.258658 6.17317 0.761205C4.95991 1.26375 3.85752 2.00035 2.92893 2.92893C1.05357 4.8043 0 7.34784 0 10C0 14.42 2.87 18.17 6.84 19.5C7.34 19.58 7.5 19.27 7.5 19V17.31C4.73 17.91 4.14 15.97 4.14 15.97C3.68 14.81 3.03 14.5 3.03 14.5C2.12 13.88 3.1 13.9 3.1 13.9C4.1 13.97 4.63 14.93 4.63 14.93C5.5 16.45 6.97 16 7.54 15.76C7.63 15.11 7.89 14.67 8.17 14.42C5.95 14.17 3.62 13.31 3.62 9.5C3.62 8.39 4 7.5 4.65 6.79C4.55 6.54 4.2 5.5 4.75 4.15C4.75 4.15 5.59 3.88 7.5 5.17C8.29 4.95 9.15 4.84 10 4.84C10.85 4.84 11.71 4.95 12.5 5.17C14.41 3.88 15.25 4.15 15.25 4.15C15.8 5.5 15.45 6.54 15.35 6.79C16 7.5 16.38 8.39 16.38 9.5C16.38 13.32 14.04 14.16 11.81 14.41C12.17 14.72 12.5 15.33 12.5 16.26V19C12.5 19.27 12.66 19.59 13.17 19.5C17.14 18.16 20 14.42 20 10C20 8.68678 19.7413 7.38642 19.2388 6.17317C18.7362 4.95991 17.9997 3.85752 17.0711 2.92893C16.1425 2.00035 15.0401 1.26375 13.8268 0.761205C12.6136 0.258658 11.3132 0 10 0V0Z" fill="black"/>
+                               </svg>
+                               
+                        </span>
+                     </a>
+                  </li>
+                  
+               </ul>
+            </div>
+            <button class=" mobile-toggle block lg:hidden">
+            <span class="bg-black-100"></span>
+            <span class="bg-black-100"></span>
+            <span class="bg-black-100"></span>
+            </button>
          </nav>
       </div>
    </div>
 </header>
-<br><br><br>
+<!--  ====================== Header Area End =============================  -->
+
+ 

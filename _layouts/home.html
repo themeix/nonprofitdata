@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{% include banner.html  %}
+{% include cards.html %}
+
+{% include catalog.html items=site.data.datasets.catalog-01  color="red" %}
+{% include catalog.html items=site.data.datasets.catalog-02  color="green" %}
+
+<div class="container  pb-20">
+    {{ content | markdownify }}
+</div>
+
+
+
+
+ 

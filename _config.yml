@@ -1,3 +1,16 @@
+###################################################################
+# Welcome to Non Profit Data Project
+# Developed by https://themeix.com
+# Version : 1.0.0
+###################################################################
+
+# Site settings
+title: The Nonprofit Data Project
+description: Information about several grant-funded nonprofit research projects generating new data for the field.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: ""
+
+# Github  Informations
 github:
   username: lecy 
   reponame: nonprofitdataproject 
@@ -5,6 +18,11 @@ github:
 ###
 ### NAVIGATION BAR
 ###
+# Build settings
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
 
 navbar:
 - title: Data Access
@@ -16,3 +34,7 @@ navbar:
 - title: About
   url: about
 
+feed:
+  collections:
+    posts:
+      path: "/index.xml"
