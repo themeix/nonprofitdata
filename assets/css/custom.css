@@ -693,6 +693,6 @@ Timeline CSS
 
 
 .grid.dataset-grid.gap-8 {
-    grid-template-columns: 450px minmax(10px, 1fr);
+    grid-template-columns: 600px minmax(10px, 1fr);
     align-items: self-start;
 }

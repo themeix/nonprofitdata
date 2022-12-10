@@ -28,7 +28,8 @@
     "dependencies": {
         "aos": "^2.3.4",
         "jquery": "^3.6.0",        
-        "jquery.easing": "^1.4.1",     
+        "jquery.easing": "^1.4.1",  
+        "prismjs": "^1.28.0",   
         "tailwindcss": "^3.1.2"
     },
     "devDependencies": {
