@@ -3,59 +3,59 @@ layout: no-footer
 ---
 <section class="main-body-area">
     <div class="main-container">
-       <div class="main-left-wrap mb-8 lg:mb-0 ">
-          <div class="grid  dataset-grid gap-8  ">
-             <div class="left-fixed-area lg:sticky top-4 border-black-500 self-start pb-20">
-                <div class="main-logo pt-20">
-                   <a href="">
-                      <h2 class="text-4xl font-bold text-sky-100 text-center">BUSINESS <br> MASTER FILE</h2>
-                   </a> 
+       <div class="main-left-wrap">
+          <div class="block md:grid  grid-cols-12 gap-8 px-10">
+             <div class="left-fixed-area lg:sticky top-12 border-black-500 self-start pb-10 lg:pb-20 col-span-12 lg:col-span-4 text-center">
+                <div class="sidebar-logo pt-6 relative mx-auto inline-block">                    
+                      <h2 class="text-4xl font-extrabold text-sky-500 text-center bg-white inline-block py-3  px-4 max-w-sm uppercase ">{{page.title}}</h2>
+                      <div class="dataset-dot absolute top-8 -left-8 -z-10">
+                        {% include icons/dot.svg %} 
+                      </div>
+                    
 
                 </div>
-                <div class="text-center md:w-8/12 m-auto px-12 lg:px-0">
-                   <div class="button-box  mt-12 border-b-2  pb-6 inline-block">
+                <div class="text-center md:max-w-96  m-auto px-12 lg:px-0">
+                   <div class="button-box mt-20 border-b-2  pb-6 inline-block">
                       <div class="grid grid-cols-2 gap-2 mb-2">
                          <div class="button-item text-right">
-                            <a class="border border-sky-100 hover:border-black-400 py-1 px-3 rounded-[6px] inline-block text-sm w-[120px] text-center"
-                               href="#">data dictionary</a>
+                            <a class=" border-black-400   hover:border-sky-500  hover:bg-sky-500 hover:text-white py-2 px-4 border rounded-[6px] inline-block font-normal w-full text-center transition-all duration-200"
+                               href="{{page.data-dictionary}}">data dictionary</a>
                          </div>
                          <div class="button-item text-left">
-                            <a class="border border-sky-100 hover:border-black-400 py-1 px-3 rounded-[6px] inline-block text-sm w-[120px] text-center"
-                               href="#">download</a>
+                            <a class=" border-black-400   hover:border-sky-500  hover:bg-sky-500 hover:text-white py-2 px-4 border rounded-[6px] inline-block font-normal w-full text-center transition-all duration-200"
+                               href="{{page.data-dwonload}}">download</a>
                          </div>
 
                       </div>
                       <div class="grid grid-cols-2 gap-2 mb-2">
                          <div class="button-item text-right">
-                            <a class="border border-sky-100 hover:border-black-400 py-1 px-3 rounded-[6px] inline-block text-sm w-[120px] text-center"
-                               href="#">user guide</a>
+                            <a class="  border-black-400   hover:border-sky-500  hover:bg-sky-500 hover:text-white py-2 px-4 border rounded-[6px] inline-block font-normal w-full text-center transition-all duration-200"
+                               href="{{page.user-guide}}">user guide</a>
                          </div>
                          <div class="button-item text-left">
-                            <a class="border border-sky-100 hover:border-black-400 py-1 px-3 rounded-[6px] inline-block text-sm w-[120px] text-center"
-                               href="#">R package</a>
+                            <a class="  border-black-400   hover:border-sky-500  hover:bg-sky-500 hover:text-white py-2 px-4 border rounded-[6px] inline-block font-normal w-full text-center transition-all duration-200"
+                               href="{{page.r-package}}">R package</a>
                          </div>
 
                       </div>
                       <div class="grid grid-cols-2 gap-2 mb-2">
                          <div class="button-item text-right">
-                            <a class="border border-sky-100 hover:border-black-400 py-1 px-3 rounded-[6px] inline-block text-sm w-[120px] text-center"
-                               href="#">cite</a>
+                            <a class=" border-black-400   hover:border-sky-500  hover:bg-sky-500 hover:text-white py-2 px-4 border rounded-[6px] inline-block font-normal w-full text-center transition-all duration-200"
+                               href="{{page.cite-bib}}">cite</a>
                          </div>
                          <div class="button-item text-left">
-                            <a class="border border-sky-100 hover:border-black-400 py-1 px-3 rounded-[6px] inline-block text-sm w-[120px] text-center"
-                               href="#">get help</a>
+                            <a class=" border-black-400   hover:border-sky-500  hover:bg-sky-500 hover:text-white py-2 px-4 border rounded-[6px] inline-block font-normal w-full text-center transition-all duration-200"
+                               href="{{page.get-help}}">get help</a>
                          </div>
 
                       </div>
                      
                    </div>
-                   <p class="text-sm  pt-6">To for ever written, is and the far monitor the this harmonics. My a through a because and
-                      mostly me, blind volumes all and read 
-                     </p>
+                   <p class="text-sm  pt-6 max-w-md mx-auto">{{page.cite-text}}                    </p>
                 </div>
              </div>
 
-             <div class="right-content-area   pr-12   max-w-3xl pb-20">
+             <div class="right-content-area  px-10   max-w-full lg:max-w-4xl pb-20 col-span-12 lg:col-span-8">
                 <div class="text-item mb-6">
     
             <h2 class="text-2xl font-bold text-black-500 mb-3">OVERVIEW</h2>

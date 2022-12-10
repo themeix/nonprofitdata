@@ -692,7 +692,7 @@ Timeline CSS
 }
 
 
-.grid.dataset-grid.gap-8 {
+.dataset-grid {
     grid-template-columns: 600px minmax(10px, 1fr);
     align-items: self-start;
 }
