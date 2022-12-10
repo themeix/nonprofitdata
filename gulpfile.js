@@ -11,7 +11,7 @@
         Let's see all CSS/JS Plugin into [package.json]
     =============================
     */
-    var File_Name = 'html-nonprofitdata.zip';
+    var File_Name = 'jekyll-nonprofitdata.zip';
     var CSS_Files = [
           './node_modules/prismjs/themes/prism.css',     
     ];
