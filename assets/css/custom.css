@@ -696,3 +696,10 @@ Timeline CSS
     grid-template-columns: 600px minmax(10px, 1fr);
     align-items: self-start;
 }
+
+
+.entry-content ul {
+    list-style: disc;
+    padding: 0 0 0 30px;
+ 
+}
