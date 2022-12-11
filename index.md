@@ -7,7 +7,7 @@ banner-main:
     title: Banner Title Here
 
 banner-section-01:
-    img: assets/main-banner.png
+    img: assets/images/main-banner.png
 
 card-section:
     cards:
