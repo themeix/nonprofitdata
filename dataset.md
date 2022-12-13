@@ -10,6 +10,17 @@ cite-bib: bibtex/bmf.bib
 get-help: http://url.com
 cite-text: 'Choi, Y. & Lee, Y. (2020, July). Ednet: A large-scale hierarchical dataset in education. Springer, Cham.'
 doi: '10.1111/josi.12122'
+buttons:
+- label: data dictionary
+  link:  https://nccs-data.org/bmf
+- label: download
+  link: http://url.com
+- label: download
+  link: http://url.com
+- label: download
+  link: http://url.com
+- label: download
+  link: http://url.com    
 ---
 
 

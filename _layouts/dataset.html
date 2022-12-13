@@ -17,41 +17,24 @@ layout: default
                 <div class="text-center md:max-w-96  m-auto px-12 lg:px-0">
                    <div class="button-box mt-20 border-b-2  pb-6 inline-block">
                       <div class="grid grid-cols-2 gap-2 mb-2">
-                         <div class="button-item text-right">
-                            <a class=" border-black-400   hover:border-sky-500  hover:bg-sky-500 hover:text-white py-2 px-4 border rounded-[6px] inline-block font-normal w-full text-center transition-all duration-200"
-                               href="{{page.data-dictionary}}">data dictionary</a>
-                         </div>
-                         <div class="button-item text-left">
-                            <a class=" border-black-400   hover:border-sky-500  hover:bg-sky-500 hover:text-white py-2 px-4 border rounded-[6px] inline-block font-normal w-full text-center transition-all duration-200"
-                               href="{{page.data-dwonload}}">download</a>
-                         </div>
+                       
 
-                      </div>
-                      <div class="grid grid-cols-2 gap-2 mb-2">
-                         <div class="button-item text-right">
-                            <a class="  border-black-400   hover:border-sky-500  hover:bg-sky-500 hover:text-white py-2 px-4 border rounded-[6px] inline-block font-normal w-full text-center transition-all duration-200"
-                               href="{{page.user-guide}}">user guide</a>
-                         </div>
-                         <div class="button-item text-left">
-                            <a class="  border-black-400   hover:border-sky-500  hover:bg-sky-500 hover:text-white py-2 px-4 border rounded-[6px] inline-block font-normal w-full text-center transition-all duration-200"
-                               href="{{page.r-package}}">R package</a>
-                         </div>
+                           {% for btn in page.buttons %}
+                            
+                           <div class="button-item text-right">
+                           <a class=" border-black-400   hover:border-sky-500  hover:bg-sky-500 hover:text-white py-2 px-4 border rounded-[6px] inline-block font-normal w-full text-center transition-all duration-200"
+                           href="   {{ btn.link }}">   {{ btn.label }}</a>
+                        </div>   {% endfor %}   
 
+                         
+                        
+                 
                       </div>
-                      <div class="grid grid-cols-2 gap-2 mb-2">
-                         <div class="button-item text-right">
-                            <a class=" border-black-400   hover:border-sky-500  hover:bg-sky-500 hover:text-white py-2 px-4 border rounded-[6px] inline-block font-normal w-full text-center transition-all duration-200"
-                               href="{{page.cite-bib}}">cite</a>
-                         </div>
-                         <div class="button-item text-left">
-                            <a class=" border-black-400   hover:border-sky-500  hover:bg-sky-500 hover:text-white py-2 px-4 border rounded-[6px] inline-block font-normal w-full text-center transition-all duration-200"
-                               href="{{page.get-help}}">get help</a>
-                         </div>
-
-                      </div>
+                      
+                
                      
                    </div>
-                   <p class="text-sm  pt-6 max-w-md mx-auto">{{page.cite-text}}                    </p>
+                   <p class="text-sm  pt-6 max-w-md mx-auto">{{page.cite-text}}   <a href="https://doi.org/"> DOI</a> : {{page.doi}}               </p>
                 </div>
              </div>
 

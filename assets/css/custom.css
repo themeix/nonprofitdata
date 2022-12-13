@@ -610,8 +610,8 @@ Timeline CSS
     }
 
     .timeline>li {
-        margin-bottom: 100px;
-        min-height: 100px;
+        margin-bottom: 80px;
+        min-height: 80px;
     }
 
     .timeline>li .timeline-panel {
@@ -669,7 +669,7 @@ Timeline CSS
 
 @media(min-width:1200px) {
     .timeline>li {
-        min-height: 170px;
+        min-height: 80px;
     }
 
     .timeline>li .timeline-panel {
