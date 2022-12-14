@@ -703,3 +703,9 @@ Timeline CSS
     padding: 0 0 0 30px;
  
 }
+
+@media (max-width: 1024px){
+.mobile-device-active{
+display: block;
+}
+}

@@ -26,8 +26,9 @@
   */
   $(".mobile-toggle").on("click", function () {
     $(this).toggleClass("open");
-    $(".toggle-menu-class").slideToggle();
+    $(".toggle-menu-class").toggleClass("mobile-device-active");
   });
+
   $(".toggle").on("click", function () {
     if ($(this).text().includes("-")) {
       $(this).text("+")
